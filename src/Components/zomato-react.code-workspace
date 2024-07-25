@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../../.."
+		},
+		{
+			"path": "../../../../Restaurant-APIs"
+		},
+		{
+			"path": "../../../../Login-App"
+		}
+	],
+	"settings": {}
+}

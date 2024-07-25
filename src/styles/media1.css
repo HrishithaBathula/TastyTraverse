@@ -1,0 +1,22 @@
+@media screen and (max-width: 520px) {
+    .auth {
+        background-color: #ce0505;
+        height: 10em;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .cuisine-h1 {
+        margin: 10px;
+        width: 100%;
+    }
+
+    #collapse-filter {
+        width: 100%;
+    }
+
+    .content-section {
+        width: 100%;
+    }
+}

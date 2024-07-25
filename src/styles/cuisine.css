@@ -1,0 +1,284 @@
+:root {
+    --pure-white: #FFFFFF;
+    --white-1: #FBFBFB;
+    --white-3: #FAFBFC;
+    --blue: #192F60;
+    --grey-1: #8C96AB;
+    --grey-2: #636F88;
+    --grey-4: #DEDFE5;
+    --orange: #EB2929;
+    --shadow: #00000029;
+    --dark-orange: #CE0505;
+    --bluish-grey: #3A5075;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+}
+
+header {
+    background-color: var(--dark-orange);
+    height: 5em;
+    position: relative;
+    text-align: center;
+}
+
+
+#res-logo {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: var(--pure-white);
+    font-size: 33px;
+    color: var(--orange);
+    font-weight: 600;
+}
+
+#res-log:hover {
+    cursor: pointer;
+}
+
+.login {
+    color: var(--pure-white);
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.acctbtn {
+    border: 1px solid var(--pure-white);
+    border-radius: 3px;
+    background-color: transparent;
+    color: var(--pure-white);
+    font-size: 1em;
+    font-weight: 500;
+    padding: 12px 15px;
+}
+
+.acctbtn:hover {
+    background-color: var(--pure-white);
+    color: var(--orange);
+    cursor: pointer;
+}
+
+.login:hover {
+    cursor: pointer;
+    color: var(--blue);
+}
+
+.cuisine-h1 {
+    font-weight: bold;
+    color: var(--blue);
+    /* margin: 20px auto; */
+    margin: 37px 0 0 113px;
+    height: 51px;
+    padding: 0; 
+}
+
+#collapse-filter {
+    border: 1px solid var(--pure-white);
+    box-shadow: 0px 3px 6px var(--shadow);
+    width: 35%;
+}
+
+.content-section {
+    margin-left: 45px;
+    width: 65%;
+}
+
+.filter-section h2 {
+    margin: 17px auto 0 26px;
+    color: var(--blue);
+    font-size: 18px;
+}
+
+.filter-section h3, .cuisine h3 {
+    margin: 10px auto 0 26px;
+    color: #192F60;
+    font-size: 16px;
+}
+
+.filter-section select {
+    /* margin: 11px auto 0 26px; */
+    border: 1px solid var(--grey-1);
+    border-radius: 3px;
+    font-size: 14px;
+    color: var(--grey-1);
+    padding: 5px;
+    width: 208px;
+    height: 35px;
+}
+
+.checkbox-wrapper div, .radio-wrapper div {
+    margin: 11px auto 12px 27px;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    accent-color: var(--bluish-grey);
+    width: 16px;
+    height: 16px;
+    border-radius: 1.5px;
+}
+
+.form-check-label, .radiobox label {
+    color: var(--grey-1);
+}
+
+.card {
+    width: 360px;
+    height: 160px;
+    margin: 0px auto;
+    box-shadow: 0px 3px 6px var(--beige);
+}
+
+.card.rests {
+    width: 100%;
+    height: auto;
+}
+
+#card-content h1 {
+    font-size: 28px;
+    color: var(--blue);
+}
+
+#card-content h5 {
+    color: var(--blue);
+    font-weight: 500;
+}
+
+.cuisine-details {
+    width: 75%;
+}
+
+table .heading {
+    font-size: 16px;
+    color: #636F88;
+    width: 200px;
+}
+
+table .cuisine-body {
+    font-size: 16px;
+    color: var(--blue);
+}
+
+.hr {
+    width: 35em;
+    margin: 30px auto 0px;
+}
+
+#pagination {
+    width: 100%;
+}
+
+#pagination-items {
+    width: 80%;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.page-item {
+    background-color: transparent;
+    border: 1px solid var(--grey-1);
+    color: var(--grey-1);
+    width: 36px;
+    height: 36px;
+    margin-right: 5px;
+    padding: 0;
+    text-align: center;
+    font-size: 20px;
+}
+
+.page-item:hover {
+    cursor: pointer;
+    background-color: var(--grey-1);
+    color: var(--pure-white);
+}
+
+#filter-btn {
+    width: 75%;
+    margin: 15px auto;
+    text-align: center;
+}
+
+#filter-btn span {
+    width: 100%;
+    border: 1px solid var(--bluish-grey);
+    text-align: center;
+    border-radius: 10px;
+}
+
+#filter-btn span:hover {
+    background-color: var(--blue);
+    color: var(--pure-white);
+    cursor: pointer;
+}
+
+.userlogin{
+    width: 50%;
+}
+
+@media screen and (max-width: 800px) {
+    .auth {
+        background-color: #ce0505;
+        height: 10em;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        position: relative;
+        z-index: 2;
+    }
+    .cuisine-h1 {
+        margin: 10px;
+        padding: 5px;
+        width: 100%;
+        font-size: 22px;
+    }
+
+    #collapse-filter {
+        width: 100%;
+    }
+
+    .content-section {
+        width: 100%;
+    }
+
+    #card-content img {
+        width: 80px;
+        height: 80px;
+    }
+    #card-content h1 {
+        font-size: 18px;
+    }
+    #card-content h5 {
+        font-size: 14px;
+    }
+    .hr {
+        width: 90%;
+        margin: 10px;
+    }
+    .cuisine-details {
+        width: 100%;
+        margin: 10px;
+        padding: 0;
+    }
+
+    .table {
+        width: 90%;
+        margin: 0;
+    }
+
+    table .heading {
+        font-size: 14px;
+        width: 100px;
+    }
+
+    table .cuisine-body {
+        font-size: 14px;
+    }
+    .userlogin {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
